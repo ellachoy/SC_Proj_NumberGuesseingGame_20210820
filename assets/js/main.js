@@ -18,7 +18,7 @@ function result(){
         runde_Nr.innerHTML= vier.value
         runde.style.display = "block"
         customer_Nr.display = "none"
-        console.log("vier.value")
+     
     }else if(fuenf.checked){
         runde_Nr.innerHTML= fuenf.value
         runde.style.display = "block"
@@ -41,8 +41,7 @@ function result(){
     }
 }
 function total_Round(){
-    total_Round.innerHTML="total"
-    console.log("total_Round")
+   total.innerHTML= customer_Nr.value
 
  
    
