@@ -10,6 +10,7 @@ h2 {
   font-weight: 300;
   color: gray;
   text-align: center;
+  font-size: 2em;
 }
 section {
   background-color: black;
@@ -25,7 +26,7 @@ h4 {
   margin-bottom: 10%;
   padding: 0 20%;
   font-family: "Open Sans Condensed", sans-serif;
-  font-size: 1.5em;
+  font-size: 2em;
   color: #fff;
 }
 fieldset:nth-of-type(1) {
@@ -36,8 +37,13 @@ fieldset:nth-of-type(1) {
 fieldset:nth-of-type(1) input[type="number"] {
   margin-left: 70%;
   padding: 5px;
-  /* display: none; */
+  display: none;
 }
+#runde,
+#customer_Nr {
+  display: none;
+}
+
 fieldset:nth-of-type(1) div {
   /* display: none; */
 }

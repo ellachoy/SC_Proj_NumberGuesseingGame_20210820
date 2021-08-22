@@ -15,33 +15,36 @@
             <h4>in how many rounds you think you can guess the number?</h4>
             <fieldset>        
                 <div>
-                    <input type="radio" name="" id=""> 
-                    <label for=""> 4</label>
+                    <input type="radio" name="#"  value="4" id="vier" onchange="selectNumber()" checked> 
+                    <label for="4"> 4</label>
                 </div>
                 <div>
-                    <input type="radio" name="" id=""> 
-                    <label for=""> 5</label>
+                    <input type="radio" name="#" value="5" id="fuenf" onchange="selectNumber()"> 
+                    <label for="5"> 5</label>
                 </div>
                 <div>
-                    <input type="radio" name="" id=""> 
-                    <label for=""> 6</label>
+                    <input type="radio" name="#" value="6" id="sechs" onchange="selectNumber()"> 
+                    <label for="6"> 6</label>
                 </div>
                 <div>
-                    <input type="radio" name="" id=""> 
-                    <label for=""> custom</label>
+                    <input type="radio" name="#" id="frei" onchange="selectNumber()"> 
+                    <label for="frei"> custom</label>
                 </div>
-                <input type="number" id="customer_Nr" placeholder="Give a number">
+                <input type="number" id="customer_Nr" placeholder="Give your rounds">
+
+                <h1 id="runde"> <span id="runde_Nr"></span> /<span id="total"></span></h1> 
+                
             </fieldset>
             <fieldset>
                 <div>
-                   <input type="number" name="" id="">
+                   <input type="number" name="number" placeholder="give your number" id="input_Nr">
                 </div>
                 <div>
-                  <input type="button" value="guess">
+                  <input type="button" value="guess" onclick="result()">
                 </div>
             </fieldset>
         </form>
-        <p id="result"></p>
+        <p id="info"></p>
     </section>
     
     <script src="assets/js/main.js"></script>
